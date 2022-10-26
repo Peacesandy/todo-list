@@ -13,15 +13,22 @@ function App() {
 
     const handleToggle = (id) => {
       let mapped = toDoList.map(task => {
-        return task.id == id ? {...task, complete: !task.complete} : {...task}
+        return task.id === id ? {...task, complete: !task.complete} : {...task}
       })
       setToDoList(mapped)
+    }
+
+    const handfilter = () => {
+      let filtered = toDoList.filter(task => {
+          return !task.complete
+      })
+      setToDoList(filtered)
     }
 
   return (
     <div className="App">
       <Header />
-      <ToDoList toDoList={toDoList}/>
+      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handfilter={handfilter}/>
     </div>
   );
 }
