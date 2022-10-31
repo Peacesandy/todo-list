@@ -1,20 +1,18 @@
 import React from 'react'
-import Todo from './ToDo'
+import ToDo from './ToDo';
 
-const ToDoList = ({toDoList}) => {
-    return(
+const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
+    return (
         <div>
-            {toDoList.map(todo =>{
-                return(
-                    <Todo todo={todo} />
+            {toDoList.map(todo => {
+                return (
+                    <ToDo todo={todo} handleToggle={handleToggle} handleFilter={handleFilter}/>
                 )
             })}
+            <button id='button' style={{margin: '20px'}} onClick={handleFilter}>Clear Completed</button>
         </div>
-    )
-}
-
-
-
+    );
+};
 
 
 export default ToDoList

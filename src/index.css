@@ -17,16 +17,49 @@ code {
 }
 
 h1{
-  color: purple;
-  background-color: #fff;
+  color: #0a78ef;
   width: auto;
   font-size: 50px;
   box-shadow: 0, 0, 0,0.1;
+  text-align: center;
 }
 
 .App{
  cursor: pointer;
  position: relative;
  padding: 12px 8px 12px 40px;
- background: rgb(221, 161, 161);
+ background: #0B0B45;
+ width: 50%;
+}
+
+#placeholder{
+  width: 200px;
+  opacity: 5;
+  font-weight: bold;
+  color: #0a78ef;
+}
+
+#button{
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0a78ef;
+  border: none;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.submit{
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0a78ef;
+  border: none;
+  color: #fff;
+  margin-left: 3em;
+  cursor: pointer;
+}
+
+.todo{
+  color: white;
+  text-align: center;
 }
